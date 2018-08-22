@@ -1,3 +1,3 @@
 # notes
 ## GFW
-> nat
+> tracert
