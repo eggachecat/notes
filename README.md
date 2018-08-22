@@ -1,1 +1,3 @@
 # notes
+## GFW
+> nat
