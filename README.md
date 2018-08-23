@@ -9,4 +9,4 @@
 
 >> -a或--all 显示所有连线中的Socket。
 ## stat all port-states
-> netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+> [netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'](http://blog.51cto.com/stephenzhao/658587)
