@@ -8,3 +8,5 @@
 >> -n或--numeric 直接使用IP地址，而不通过域名服务器。
 
 >> -a或--all 显示所有连线中的Socket。
+## stat all port-states
+> netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
