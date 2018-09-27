@@ -103,3 +103,8 @@
 # ./configure make & make install
 [ref](https://robots.thoughtbot.com/the-magic-behind-configure-make-make-install)
 
+# tips4virtualbox
+1. change MAC address when use some copied-vdi
+
+
+
