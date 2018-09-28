@@ -106,5 +106,8 @@
 # tips4virtualbox
 1. change MAC address when use some copied-vdi
 
+# tips4golang
+1. `fmt.Println(t.Format("20060102150405"))` where `20060102150405` is when golang was created
+
 
 
