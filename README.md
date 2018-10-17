@@ -16,6 +16,7 @@
 > mklink \d <DIR_UNDER_$GOPATH>  <REAL_DIR>
 
 # how to install fucking-mysql-on-docker
+
 ## Pull the image
     > docker pull mysql-server
     
@@ -24,6 +25,9 @@
     
 ### example
     > docker run -p 3306:3306 --name sasql -e MYSQL_ROOT_PASSWORD=000000  -d mysql/mysql-server
+
+### Start as service
+    > docker ... --restart=always
 
 ### MARKDOWN
      -e <ENV_KEY=ENV_VALUE>
