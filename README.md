@@ -116,4 +116,5 @@
 # killALL
 1. ps -ef | grep "sunao.*\-bash" | awk '{print $2}' | xargs kill -9
 
-
+# VNC-server 黑屏
+use -localhost=no
