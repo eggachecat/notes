@@ -131,4 +131,15 @@ use -localhost=no
 
 # 改变table的编码(docker-mysql的坑)
     > ALTER TABLE table-name CONVERT TO CHARACTER SET utf8;
-
+# celery的坑
+```
+OSError: Socket closed in celery worker 
+```
+```python
+app = Celery(
+    'myapp',
+    broker='amqp://guest@localhost//',
+)
+app.conf.broker_heartbeat = 0
+```
+works like a charm
