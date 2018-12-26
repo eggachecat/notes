@@ -123,7 +123,7 @@ use -localhost=no
 1. 开启forwading
     > sysctl net.ipv4.ip_forward=1
 2. 转发
-    > iptables -t nat -A PREROUTING -p tcp -d <IP> --dport <PORT> -j DNAT --to-destination <THOST>:<TPORT>
+    > iptables -t nat -A PREROUTING -p tcp -d IP --dport PORT -j DNAT --to-destination THOST:TPORT
 3. 开启
     > iptables -t nat -A POSTROUTING -j MASQUERADE
 
