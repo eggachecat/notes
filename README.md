@@ -129,3 +129,6 @@ use -localhost=no
 
 *-d省略是localhost
 
+# 改变table的编码(docker-mysql的坑)
+    > ALTER TABLE table-name CONVERT TO CHARACTER SET utf8;
+
