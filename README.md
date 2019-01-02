@@ -143,3 +143,7 @@ app = Celery(
 app.conf.broker_heartbeat = 0
 ```
 works like a charm
+
+# 大便的meteor
+速度太慢,加hosts
+> 54.192.225.217 warehouse.meteor.com
