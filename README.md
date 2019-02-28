@@ -147,3 +147,17 @@ works like a charm
 # 大便的meteor
 速度太慢,加hosts
 > 54.192.225.217 warehouse.meteor.com
+
+# 内外网的沟通
+默认走外网
+> route add -net 0.0.0.0/0  <外网的Ifacey> 
+> route add -net 0.0.0.0/0 gw <外网的GateWay>
+
+特殊的走内网
+> route add -net 192.168.203.0/24  <内网的Ifacey> 
+> route add -net 192.168.203.0/24 gw <内网的GateWay>
+
+查看route table确认
+> route table
+
+
