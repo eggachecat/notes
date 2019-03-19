@@ -19,7 +19,13 @@
 
 ## Pull the image
     > docker pull mysql-server
-    
+
+## usergroup
+    > sudo groupadd docker
+    > sudo gpasswd -a $USER docker
+    > logout
+
+
 ## Install the fucking-mysql-server
     > docker run -p <LOCAL_ADDRESS_PORT>:3306 --name <C_NAME> -e MYSQL_ROOT_PASSWORD=<PASSWORD> -d mysql/mysql-server:<VERSION>
     
@@ -62,6 +68,12 @@
     
 ## Run in background
     > docker run -d
+    
+## docker IO
+    > sudo docker export <CONTAINER ID> > /home/export.tar
+    
+    > cat /home/export.tar | sudo docker import - busybox-1-export:latest
+
         
 ## docker volume
     > docker volume create --name <VOLUME_NAME>
