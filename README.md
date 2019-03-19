@@ -162,4 +162,8 @@ works like a charm
 查看route table确认
 > route table
 
+# fuck ubuntu
+## PCIe Bus error severity=Corrected
+`pci=nomsi` before `quiet splash ---`
+
 
