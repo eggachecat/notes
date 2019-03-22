@@ -177,5 +177,8 @@ works like a charm
 # fuck ubuntu
 ## PCIe Bus error severity=Corrected
 `pci=nomsi` before `quiet splash ---`
+ 
+ `/etc/default/grub`
 
+> GRUB_CMDLINE_LINUX_DEFAULT="quiet splash
 
