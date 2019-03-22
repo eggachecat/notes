@@ -182,3 +182,6 @@ works like a charm
 
 > GRUB_CMDLINE_LINUX_DEFAULT="quiet splash
 
+> sudo update-grub
+
+> sudo reboot
