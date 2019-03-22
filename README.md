@@ -185,3 +185,7 @@ works like a charm
 > sudo update-grub
 
 > sudo reboot
+
+> workspace!
+
+> buid-in screen!
