@@ -73,6 +73,12 @@
     > sudo docker export <CONTAINER ID> > /home/export.tar
     
     > cat /home/export.tar | sudo docker import - busybox-1-export:latest
+    
+    > docker save -o <path for generated tar file> <image name>
+    
+    > docker load -i <path to image tar file>
+
+
 
         
 ## docker volume
