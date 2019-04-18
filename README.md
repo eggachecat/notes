@@ -201,5 +201,13 @@ works like a charm
 > sudo apt-get install libtcmalloc-minimal4
 > export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
 
+# pg migrate 检查
+> SELECT MAX("id") FROM table_name;   
+
+> SELECT nextval('table_name_id_seq');
+
+如果前者要大,
+
+> SELECT setval( 'table_name_id_seq', ( SELECT MAX ( "id" ) FROM table_name ) + 1 );
 
 
