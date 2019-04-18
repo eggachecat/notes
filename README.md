@@ -195,3 +195,11 @@ works like a charm
 > workspace!
 
 > buid-in screen!
+
+
+# Error in `python': corrupted size vs. prev_size
+> sudo apt-get install libtcmalloc-minimal4
+> export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
+
+
+
