@@ -210,4 +210,37 @@ works like a charm
 
 > SELECT setval( 'table_name_id_seq', ( SELECT MAX ( "id" ) FROM table_name ) + 1 );
 
+# 模版们 
+## binary search
+```python
+def binary_search(l, r, g, f):
+    while l < r:
+        m = l + (r-l) / 2
+        if f(m):
+            return m
+        if g(m):
+            r = m + 1
+        else:
+            l = m
 
+```
+## dfs
+```python
+def dfs(choices, used, curr_depth, max_depth, solution, ans):
+    # print(curr_depth, solution)
+    if curr_depth == max_depth:
+        ans.append(solution[:])
+        return
+
+    for i in range(len(choices)):
+        choice = choices[i]
+        if (i > 0) and (choices[i] == choices[i-1]) and (not used[i-1]):
+            continue
+        if not used.get(i, False):
+            used[i] = True
+            solution.append(choice)
+            dfs(choices, used, curr_depth + 1, max_depth, solution, ans)
+            used[i] = False
+            solution.pop()
+
+```
